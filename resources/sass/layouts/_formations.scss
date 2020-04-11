@@ -1,0 +1,78 @@
+.offers {
+    background-color: #373737;
+    width: 100%;
+    padding: 12px;
+   
+}
+.offers .formations{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);       
+    grid-gap: 2rem;
+    width: 100%;
+}
+.offers h1{
+    color: #eee;
+    text-align: center;
+    padding: 10px;   
+    font-size: 2.4rem;
+}
+.offers p{
+    color: #eee;
+    text-align: center;
+    padding: 7px;   
+    font-size: 1.1rem;
+}
+.offers .formations .formation{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(33,35,56);
+    border-radius: 6px;
+    overflow: hidden;
+}
+// .formations .formation:first-child{
+//     grid-auto-columns: ;
+// }
+
+.formations .formation h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #521751;
+    text-align: center;
+    padding: 6px;
+}
+.formations .formation p{
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgb(33,35,56);
+    padding: 3px;
+    word-wrap: break-word;
+
+}
+.formations .formation hr{
+    color: #ccc;
+    width: 40%;
+}
+
+// Badges
+.offers .formation .my-offer{
+    position: absolute;
+    right: -4rem;
+    top: 0;   
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotateZ(45deg);
+    background-color: #31f087;
+    color: white;
+    padding:1.15rem  4rem; 
+    
+}
+.offers .formation:first-child .my-offer,.offers .formation:nth-child(2)  .my-offer{
+    background-color: #ff4a2a;
+}   
+.offers .formation .my-offer span{
+  display: inline-block;
+  margin-right: 10px;
+   
+}

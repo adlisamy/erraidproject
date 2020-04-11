@@ -1,0 +1,177 @@
+.form-container {
+    position: relative;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    width: 768px;
+    max-width: 100%;
+    min-height: 500px;
+    background-color: #f7f4f4;
+    overflow: auto;
+}
+$green: #18bc9b;
+
+.form-container::-webkit-scrollbar {
+    background: rgba($green, 0.2);
+    height: 16px;
+    width: 16px;
+
+    &:disabled {
+        background: transparent;
+    }
+}
+
+.form-container::-webkit-scrollbar-track {
+    height: 20px;
+    width: 20px;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+    background: rgba($green, 0.6);
+    border-radius: 20px;
+
+    &:hover {
+        background: rgba($green, 0.75);
+    }
+
+    &:active {
+        background: rgba($green, 0.9);
+    }
+}
+
+.form-container::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba($green, 0.2);
+}
+.form-container h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    color: #515a5f;
+}
+.form-container form {
+    position: absolute;
+    color: #47505e;
+    //    background-color: #fff;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 2rem;
+    padding: 0 50px;
+    margin: 10px auto;
+}
+.form-container form .input-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-container form label {
+    padding: 6px 0;
+    font-weight: bold;
+}
+.form-container form input,
+.form-container form select {
+    margin: 5px 0 5px 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    color: #47505e;
+    border: 1px solid #cecece;
+}
+.form-container form select {
+    cursor: pointer;
+}
+.form-container form select option {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+.form-container form .btn {
+    grid-area: 8/1 / span 1 / span 2;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+.form-container form input[type="submit"]:active {
+    transform: scale(0.95);
+}
+.form-container form button:focus {
+    outline: none;
+}
+//Steps Style
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+.steps-container {
+    grid-area: 9/1 / span 1 / span 2;
+    margin: 0 auto;
+}
+.steps-container .step {
+    height: 15px;
+    width: 15px;
+    margin: 2px 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4caf50;
+}
+
+// Login Form
+
+#login-form {
+    top: 12%;
+    left: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+#login-form .input-control {
+    margin: 10px auto;
+}
+#login-form .input-control input {
+    margin: 5px 0 0 0;
+}
+#login-form .btn {
+    margin-top: 40px;
+}
+#login-form a {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px 0;
+}

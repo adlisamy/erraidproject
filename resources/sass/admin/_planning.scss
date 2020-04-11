@@ -1,0 +1,103 @@
+.heading {
+    text-align: center;
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+.info-container {
+    text-align: center;
+    margin: 20px auto;
+    h2,
+    h3,
+    span {
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .year-spec {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sem-year {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+.planning-table {
+    width: 100%;
+    margin-top: 30px;
+    background-color: $darkGrey;
+    font-size: 1rem;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(182, 185, 189);
+   
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+    -webkit-box-shadow: -1px 11px 21px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 11px 21px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 11px 21px -6px rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-gap: 2rem;
+    & > div {
+        padding: 20px;
+        border-right: 2px solid #636b6f;
+        border-bottom: 2px solid #636b6f;
+        color: #86c2e0;
+        
+    }
+    div.line {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            to top right,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) calc(50% - 0.8px),
+            rgba(0, 0, 0, 1) 50%,
+            rgba(0, 0, 0, 0) calc(50% + 0.8px),
+            rgba(0, 0, 0, 0) 100%
+        );
+        .horaire {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            padding: 5px 0;
+        }
+        .journee {
+            position: absolute;
+            bottom: 8%;
+        }
+    }
+    div.horaires span {
+        display: inline-block;
+        padding: 4px 0;
+        
+    }
+    div.observation span{
+        display: inline-block;
+        margin: 20px 0 0;
+        
+    }
+    div span[contenteditable]:focus{
+        font-size: larger;
+         outline: none; 
+         
+        
+        transition: all .3s ease-in-out;
+    }
+    
+}

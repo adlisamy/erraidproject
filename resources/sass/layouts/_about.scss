@@ -1,0 +1,54 @@
+.about-container{
+    padding: 20px 0;
+    margin: 20px 10px;
+    background-color:    #7AA9FF;    
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.about-container h1{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+    padding:0 12px;
+   
+}
+.about-container hr{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 98%;
+}
+.about-container p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+    text-align: justify;
+    
+}
+
+.about-container .map{
+    width: 500px;
+    height: 350px;
+    background-color: #333;
+    margin: 10px auto;
+}
+.about-container .adress{
+    text-align: center;  
+    font-weight: bold;
+    
+    font-size: 1.2rem;    
+    width: 30%;
+    padding: 10px 8px;
+    position: relative;
+    float: left;   
+    left: 10%;
+    top:25px;
+    
+    
+    
+   
+}

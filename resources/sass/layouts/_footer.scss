@@ -1,0 +1,118 @@
+footer {
+    background-color: #282a30;
+    padding: 10px;    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #414140;
+    color: rgba(197, 195, 195, 0.7);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    text-align: center;
+    padding: 8px 20px;
+}
+
+.footer-container .brand-logo {
+    width: 85px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.info .brand {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.info .brand-title {
+    align-self: center;
+}
+.info .brand-title-fr,
+.navigation .brand-title-ar {
+    font-size: 1.1rem;
+    padding: 1px 0;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.info .brand-title-fr {
+    letter-spacing: 0.3rem;
+}
+.info .brand-title-ar {
+    padding: 3px 0;
+    letter-spacing: 0.1rem;
+}
+.info p {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.4rem;
+}
+.info .info-social {
+}
+.info .info-social a {
+    display: inline-block;
+    color: rgba(197, 195, 195, 0.7);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 4px;
+    padding: 0 10px;
+}
+.footer-container h5 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+.footer-container .links {
+    padding: 8px 10px;
+}
+
+.footer-container hr {
+    width: 50px;
+    margin: 0 0 20px;
+    border: none;
+    background: #2b7dc4;
+    height: 2px;
+}
+.footer-container .links-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+.footer-container .links ul li {
+    margin: 8px 0px;
+    font-size: 0.9rem;
+}
+.footer-container .links ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(197, 195, 195, 0.7);
+}
+
+.footer-container .contacts {
+    padding: 8px 10px;
+}
+.footer-container .contacts ul li {
+    margin: 8px 0px;
+    font-size: 0.9rem;
+}
+.footer-container .social-facebook {
+    padding: 8px 10px;
+}
+.footer-container .social-facebook .preview {
+    width: 260px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+}
+footer p {
+    text-align: center;
+}
+footer .copyright {
+    color: #2b7dc4;
+    font-size: 0.8rem;
+}

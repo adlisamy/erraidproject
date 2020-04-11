@@ -1,0 +1,200 @@
+@import "../variables";
+@import "./grid";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+html {
+    background-color: #eee;
+    color: #636b6f;
+    font-family: "Nunito", "Amiri", sans-serif;
+    font-weight: 200;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover,
+a:active {
+    color: #999;
+}
+.side-nav {
+    padding-top: 110px;
+    background-color: $purpleLight;
+    width: 280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    .title {
+        width: 100%;
+        position: absolute;
+        font-size: 1.5rem;
+        top: 0;        
+        letter-spacing: 2px;
+        border-bottom: 2px solid $lightGrey;
+        color: $lightGrey;
+        font-family:'Courier New', Courier, monospace;
+        
+
+        h1 {
+            text-align: center;
+            cursor: pointer;
+            padding: 20px 0;
+            background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         
+        }
+    }
+    ul {
+        list-style-type: none;
+        margin-top: 30px;
+        li {
+            margin: 20px 0;
+        }
+        a {
+            display: block;
+            color: $darkGrey;
+            padding: 15px 30px;
+            font-weight: 300;
+            transition: all 0.5s ease-in-out;
+            &.active {
+                background-color: $purpleDark;
+                border-left: 5px solid $neonGreen;
+                padding: 15px 30px 15px 20px;
+            }
+            &:hover {
+                background-color: $purpleDark;
+                border-left: 5px solid $neonGreen;
+                padding: 15px 30px 15px 20px;
+                .fa,
+                .fas {
+                    color: $neonGreen;
+                }
+            }
+        }
+        .fa,
+        .fas {
+            display: inline-block;
+            width: 30px;
+            color: $darkGrey;
+            font-size: 1.4rem;
+            margin-right: 0.8rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+// Header Style
+header {
+    background-color: #fff;
+    margin-left: 280px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search {
+        display: inline-block;
+        margin: 0 10px;
+        text-align: center;
+        .fa {
+            color: $darkGrey;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        input[type="text"] {
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            color: $purpleLight;
+            padding: 7px;
+            font-weight: 200;
+            border-radius: 15px;
+            margin-left: 5px;
+
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                background-color: $lightGrey;
+            }
+            &:focus,
+            &.active {
+                background-color: $lightGrey;
+                outline: none;
+            }
+        }
+    }
+    .logout {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px;
+    }
+}
+// Content Style
+.content-wrapper {
+    margin-left: 280px;
+    padding: 50px;
+    .heading {
+        h1 {
+            font-size: 1.4rem;
+            color: purple;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #1b1b1b;
+            font-size: 0.8rem;
+            margin-bottom: 12px;
+        }
+    }
+    .users-table {
+        width: 100%;
+        margin-top: 30px;
+        thead {
+            background-color: $darkGrey;
+            th {
+                font-size: 0.8rem;
+
+                padding: 20px 10px;
+                text-transform: uppercase;
+                text-align: left;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: rgb(182, 185, 189);
+                -webkit-border-top-left-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                -moz-border-radius-topleft: 5px;
+                -moz-border-radius-topright: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+        tbody {
+            background-color: #fff;
+            font-size: 0.8rem;
+
+            td {
+                padding: 20px 10px;
+                color: rgb(182, 185, 189);
+                .logo-user {
+                    display: inline-block;
+                    background-color: $neonGreen;
+                    padding: 15px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    // width: 45px;
+                    // height: 45px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@import "./planning";

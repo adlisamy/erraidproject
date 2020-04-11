@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito-Regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NunitoLight";
+    src: url("../fonts/Nunito-Light.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Amiri";
+    src: url("../fonts/Amiri-Regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: "Nunito", "Amiri", sans-serif;
+    font-weight: 200;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+body{
+    padding-bottom: 280px;
+}
+
+img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color:#999 ;
+}
+a:hover,a:active{    
+    color:#999 ;
+}
+@import "./layouts/header";
+@import "./layouts/slider";
+@import "./layouts/content";
+@import "./layouts/formations";
+@import "./layouts/testimonials";
+@import "./layouts/forms";
+@import "./layouts/contact";
+@import "./layouts/about";
+@import "./layouts/footer";
+
